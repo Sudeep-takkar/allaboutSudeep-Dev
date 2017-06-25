@@ -1,0 +1,19 @@
+.cardContainer {
+    padding: 3%;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .cardContainer {
+        padding: 3% 0 3% 0;
+    }
+    .pieChartLabel{
+        font-size: 0.55rem;
+    }
+}
+
