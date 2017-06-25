@@ -6,7 +6,6 @@ import IconMenu from 'material-ui/IconMenu';
 import IconButton from 'material-ui/IconButton';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 import MenuItem from 'material-ui/MenuItem';
-
 import {Router, Route} from 'react-router';
 import {createBrowserHistory} from 'history';
 
@@ -19,7 +18,7 @@ const Menu = (props) => (
     targetOrigin={{horizontal: 'right', vertical: 'top'}}
     anchorOrigin={{horizontal: 'right', vertical: 'top'}}
   >
-    <MenuItem primaryText="Attendance" />
+    <MenuItem primaryText="Attendance"/>
     <MenuItem primaryText="Products"/>
   </IconMenu>
 );
