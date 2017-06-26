@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {PieChart, Pie, Legend, Cell, Tooltip, ResponsiveContainer} from 'recharts';
+import {PieChart, Pie, Cell, Tooltip, ResponsiveContainer} from 'recharts';
 import {scaleOrdinal, schemeCategory10} from 'd3-scale';
 
 const colors = scaleOrdinal(schemeCategory10).range();

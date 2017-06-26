@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Flex} from 'grid-styled';
+import {Grid} from 'grid-styled';
 import {Card, CardText, CardHeader} from 'material-ui/Card';
 
 import ChartPie from './EmployeeRegistration/ChartPie';

@@ -8,9 +8,6 @@ const genderPercentage = {
   female: '90%'
 };
 
-const iconStyles = {
-  marginRight: 24,
-};
 
 class ChartGender extends Component {
   render() {

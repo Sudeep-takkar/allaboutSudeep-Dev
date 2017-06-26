@@ -15,14 +15,6 @@ class CustomizedLabel extends Component {
   }
 }
 
-const renderLabelContent = (props) => {
-  const {viewBox} = props;
-  return (
-    <g textAnchor={"end"}>
-      <text x={viewBox.width} y={viewBox.height}>{"test"}</text>
-    </g>
-  );
-};
 
 class ChartBar extends Component {
   render() {
