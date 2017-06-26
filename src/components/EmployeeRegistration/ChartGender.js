@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import {Flex,Grid} from 'grid-styled';
-import FontIcon from 'material-ui/FontIcon';
-import {blue500, red500, greenA200} from 'material-ui/styles/colors';
+// import {Flex,Grid} from 'grid-styled';
+// import FontIcon from 'material-ui/FontIcon';
+// import {blue500, red500, greenA200} from 'material-ui/styles/colors';
 
 const genderPercentage = {
   male: '10%',
