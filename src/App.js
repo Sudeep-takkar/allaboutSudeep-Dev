@@ -21,9 +21,9 @@ const Menu = (props) => (
     targetOrigin={{horizontal: 'right', vertical: 'top'}}
     anchorOrigin={{horizontal: 'right', vertical: 'top'}}
   >
-    <MenuItem><Link to="/attendance">Attendance</Link></MenuItem>
-    <MenuItem><Link to="/products">Products</Link></MenuItem>
-    <MenuItem><Link to="/employeeRegistration">Employee Registration</Link></MenuItem>
+    <Link to="/attendance"><MenuItem>Attendance</MenuItem></Link>
+    <Link to="/products"><MenuItem>Products</MenuItem></Link>
+    <Link to="/employeeRegistration"><MenuItem>Employee Registration</MenuItem></Link>
   </IconMenu>
 );
 
