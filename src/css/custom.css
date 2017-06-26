@@ -8,6 +8,10 @@
     color: white;
 }
 
+.flexContainer{
+    display: flex
+}
+
 @media (max-width: 768px) {
     .cardContainer {
         padding: 3% 0 3% 0;

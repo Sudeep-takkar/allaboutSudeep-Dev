@@ -7,16 +7,10 @@ import ChartLine from './ProductsModule/ChartLine';
 import TableSale from './ProductsModule/TableSale';
 import TableIcon from './ProductsModule/TableIcon';
 import ItemName from './ProductsModule/ItemName';
-import TimeInfo from './AttendanceModule/TimeInfo';
 
 const App = () => {
   return (
     <div>
-      <Flex>
-        <Grid width={[1, 1, 1 / 2, 1 / 2]} p={4}>
-          <TimeInfo />
-        </Grid>
-      </Flex>
       <Flex>
         <Grid width={[1, 1, 1 / 2, 1 / 2]} p={4}>
           Dashboard > Summary
