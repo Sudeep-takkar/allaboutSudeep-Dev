@@ -20,7 +20,7 @@ class AboutSudeep extends React.Component {
         background: `url(${imageBackground}) center / cover no-repeat transparent`,
         backgroundSize: 'cover'
       }}>
-        <Particles params={particleJson} height="250px"/>
+        <Particles params={particleJson} height="150px"/>
         <div style={{paddingBottom: '25px', textAlign: 'center'}}>
           <Typist avgTypingSpeed={40} startDelay={2000}
                   cursor={{
