@@ -4,6 +4,14 @@ import particleJson from '../particle.js';
 import Typist from 'react-typist';
 import imageBackground from '../luca-bravo-217276.jpg';
 
+const styles={
+  stylesText: {
+    color: 'white',
+    fontSize: '-webkit-xxx-large',
+    textShadow: '2px 2px #00bcd4'
+  }
+};
+
 class AboutSudeep extends React.Component {
   render() {
     return (
@@ -19,7 +27,7 @@ class AboutSudeep extends React.Component {
                     show: true,
                     blink: true,
                     element: '|'}}>
-            <span style={{color: 'white', fontSize: '-webkit-xxx-large'}}>WEB DEVELOPER IN THE MAKING </span>
+            <span style={styles.stylesText}>big ideas have small beginnings...</span>
           </Typist>
         </div>
       </div>

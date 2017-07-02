@@ -4,11 +4,6 @@ import { Flex} from 'grid-styled';
 
 
 class EmployeeCount extends React.Component {
-  constructor(props) {
-    super(props);
-    console.log(this.props);
-  }
-
   render() {
     return (
       <Card>

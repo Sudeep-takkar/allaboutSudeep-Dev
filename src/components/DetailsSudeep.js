@@ -5,7 +5,7 @@ class DetailsSudeep extends React.Component {
   render() {
     return (
       <div>
-        Details
+
       </div>
     );
   };

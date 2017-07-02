@@ -15,17 +15,17 @@ const Menu = (props) => (
     targetOrigin={{horizontal: 'right', vertical: 'top'}}
     anchorOrigin={{horizontal: 'right', vertical: 'top'}}
   >
-    <Link className="textDecorationNone" to="/"><MenuItem>Home</MenuItem></Link>
-    <Link className="textDecorationNone" to="/attendance"><MenuItem>Attendance</MenuItem></Link>
-    <Link className="textDecorationNone" to="/products"><MenuItem>Products</MenuItem></Link>
-    <Link className="textDecorationNone" to="/employeeRegistration"><MenuItem>Employee Registration</MenuItem></Link>
+    <Link className="textDecorationNone" to="/" replace><MenuItem>Home</MenuItem></Link>
+    <Link className="textDecorationNone" to="/attendance" replace><MenuItem>Attendance</MenuItem></Link>
+    <Link className="textDecorationNone" to="/products" replace><MenuItem>Products</MenuItem></Link>
+    <Link className="textDecorationNone" to="/employeeRegistration" replace><MenuItem>Employee Registration</MenuItem></Link>
   </IconMenu>
 );
 
 const CommmonUtils = () => {
 
   return(
-    <AppBar iconElementRight={<Menu />} iconElementLeft={<Link to="/" className="textDecorationNone"><MenuItem>Sudeep Takkar</MenuItem></Link>}/>
+    <AppBar iconElementRight={<Menu />} iconElementLeft={<Link to="/" className="textDecorationNone" replace><MenuItem>Sudeep Takkar</MenuItem></Link>}/>
   )
 };
 

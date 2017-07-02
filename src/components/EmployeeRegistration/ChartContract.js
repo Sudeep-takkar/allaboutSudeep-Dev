@@ -14,7 +14,6 @@ class CustomizedLabel extends Component {
 
 class ChartContract extends Component {
   render() {
-    console.log(this.props);
     const layout =  this.props.type === 'stacked' ? "vertical" : "horizontal";
     return (
       <div>
