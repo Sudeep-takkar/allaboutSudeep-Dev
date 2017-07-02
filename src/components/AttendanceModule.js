@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Flex } from 'grid-styled';
 import {Card, CardText} from 'material-ui/Card';
+
 import ChartPie from './AttendanceModule/ChartPie';
 import ChartArea from './AttendanceModule/ChartArea';
 import ChartLine from './AttendanceModule/ChartLine';

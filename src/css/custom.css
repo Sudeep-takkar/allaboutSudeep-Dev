@@ -8,15 +8,44 @@
     color: white;
 }
 
-.flexContainer{
+.flexContainer {
     display: flex
+}
+
+.textDecorationNone {
+    text-decoration: none;
+}
+
+/* Blink CSS for Typist */
+.Typist .Cursor {
+    display: inline-block;
+    color: white;
+    font-size: 45px;
+}
+
+.Typist .Cursor--blinking {
+    opacity: 1;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 768px) {
     .cardContainer {
         padding: 3% 0 3% 0;
     }
-    .pieChartLabel{
+
+    .pieChartLabel {
         font-size: 0.55rem;
     }
 }

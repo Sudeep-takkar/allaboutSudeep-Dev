@@ -1,41 +1,30 @@
 import React from 'react';
-import AppBar from 'material-ui/AppBar';
-import IconMenu from 'material-ui/IconMenu';
-import IconButton from 'material-ui/IconButton';
-import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
-import MenuItem from 'material-ui/MenuItem';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import {createBrowserHistory} from 'history';
+import { Router, Route, Switch } from 'react-router-dom';
+import createHashHistory from 'history/createHashHistory';
 
 
 import AttendanceModule from './components/AttendanceModule';
 import ProductsModule from './components/ProductsModule';
 import EmployeeRegistration from './components/EmployeeRegistration';
+import AboutSudeep from './components/AboutSudeep';
+import DetailsSudeep from './components/DetailsSudeep';
+import CommonUtils from './components/CommonUtils';
 
-const Menu = (props) => (
-  <IconMenu
-    {...props}
-    iconButtonElement={
-      <IconButton><MoreVertIcon /></IconButton>
-    }
-    targetOrigin={{horizontal: 'right', vertical: 'top'}}
-    anchorOrigin={{horizontal: 'right', vertical: 'top'}}
-  >
-    <Link to="/attendance"><MenuItem>Attendance</MenuItem></Link>
-    <Link to="/products"><MenuItem>Products</MenuItem></Link>
-    <Link to="/employeeRegistration"><MenuItem>Employee Registration</MenuItem></Link>
-  </IconMenu>
-);
+
+const history = createHashHistory();
 
 const App = () => {
   return (
-    <Router history={createBrowserHistory()}>
+    <Router history={history}>
       <div>
-        <AppBar iconElementRight={<Menu />}/>
-        <Route exact path="/" component={AttendanceModule}/>
-        <Route path="/attendance" component={AttendanceModule}/>
-        <Route path="/products" component={ProductsModule}/>
-        <Route path="/employeeRegistration" component={EmployeeRegistration}/>
+        <AboutSudeep />
+        <CommonUtils />
+        <Switch>
+          <Route exact path="/" component={DetailsSudeep}/>
+          <Route path="/attendance" component={AttendanceModule}/>
+          <Route path="/products" component={ProductsModule}/>
+          <Route path="/employeeRegistration" component={EmployeeRegistration}/>
+        </Switch>
       </div>
     </Router>
   )
