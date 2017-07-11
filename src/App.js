@@ -9,6 +9,7 @@ import EmployeeRegistration from './components/EmployeeRegistration';
 import AboutSudeep from './components/AboutSudeep';
 import DetailsSudeep from './components/DetailsSudeep';
 import CommonUtils from './components/CommonUtils';
+import DataDashboard from './components/DataDashboard';
 
 
 const history = createHashHistory();
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/attendance" component={AttendanceModule}/>
           <Route path="/products" component={ProductsModule}/>
           <Route path="/employeeRegistration" component={EmployeeRegistration}/>
+          <Route path="/dataDashboard" component={DataDashboard}/>
         </Switch>
       </div>
     </Router>

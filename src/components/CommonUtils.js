@@ -19,6 +19,7 @@ const Menu = (props) => (
     <Link className="textDecorationNone" to="/attendance" replace><MenuItem>Attendance</MenuItem></Link>
     <Link className="textDecorationNone" to="/products" replace><MenuItem>Products</MenuItem></Link>
     <Link className="textDecorationNone" to="/employeeRegistration" replace><MenuItem>Employee Registration</MenuItem></Link>
+    <Link className="textDecorationNone" to="/dataDashboard" replace><MenuItem>Data Dashboard</MenuItem></Link>
   </IconMenu>
 );
 
