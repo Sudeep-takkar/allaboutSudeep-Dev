@@ -84,7 +84,7 @@ const particleJson = {
       grab: {
         distance: 800,
         line_linked: {
-          opacity: 0.2
+          opacity: 0.7
         }
       },
       bubble: {
